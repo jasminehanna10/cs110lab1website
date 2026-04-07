@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    background-color: white;
+    color: blueviolet;
+    font-family: Arial;
+}
+
+/* FLEXBOX */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.box {
+    background-color: rgb(240, 209, 240);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* IMAGE */
+.image {
+    max-width: 200px;
+}
+
+/* ANIMATION */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(152, 37, 154);
+    margin: 20px auto;
+
+    animation: move 3s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
